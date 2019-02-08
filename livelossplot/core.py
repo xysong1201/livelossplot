@@ -3,7 +3,6 @@ import warnings
 
 import matplotlib
 import matplotlib.pyplot as plt
-matplotlib.use('TkAgg')
 from IPython.display import clear_output
 
 
