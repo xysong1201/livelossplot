@@ -68,6 +68,11 @@ def draw_plot(logs, metrics, figsize=None, max_epoch=None,
 
         plt.title(metric2title.get(metric, metric))
         plt.xlabel('epoch')
+        
+        my_x_ticks = np.arange(0, 200, 1)
+        my_y_ticks = np.arange(0, 1, 0.01)
+        plt.xticks(my_x_ticks)
+        plt.yticks(my_y_ticks)
         plt.legend(loc='center right')
 
     plt.tight_layout()
